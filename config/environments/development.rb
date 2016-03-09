@@ -1,4 +1,6 @@
 Rails.application.configure do
+  config.react.variant = :development
+  config.watchable_files.concat Dir["#{config.root}/app/models/public/*.rb"]
   config.action_mailer.default_url_options = { host: "http://localhost:3000" }
   # Settings specified here will take precedence over those in config/application.rb.
 
