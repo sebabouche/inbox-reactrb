@@ -1,23 +1,26 @@
 # Inbox the ReactRb way
 
-This is a fork of __inbox__, a simple yet powerful one3one chat module for a Rails app taking advantage of React server/client rendering.
-In this version, we will make it event simpler using __ReactRb__  and __react components__. Yay!
+This README.md is updated with instructions for each chapter/branch (go to the master branch for more information).
 
-Credits and links:
+## Chapter 1 - Instructions
 
-+ [Inbox](https://github.com/Eschults/inbox) by [Eschults](https://github.com/Eschults)
-+ [ReactRb Tutorial](https://github.com/loicboutet/reactrb_tutorial/) by [Loïc Boutet](https://github.com/loicboutet/reactrb_tutorial/)
-+ [ReactRb](http://reactrb.org) website
-+ Ask questions about ReactRb to the creators [![Gitter](https://badges.gitter.im/zetachang/react.rb.svg)](https://gitter.im/zetachang/react.rb?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+### 1. Install Reactive Rails Generator
 
+Loic Boutet created this handy reactrb generator we will use throughout the tutorial.
+Starting now! Add to your `Gemfile`:
 
-This README.md is updated with instructions for each chapter.
+  gem 'reactive_rails_generator'
 
-## Chapter 0 - Instructions
-### 1. Go to chapter 1
+Then run on the console:
 
-    git checkout chapter-1
+  bundle install
 
-> See? I told you. It's easy.
+### 2. Install the remaining gems
+
+Back to your console, run the two following commands:
+
+  rails g reactrb:install --all
+  bundle update
+
 
 2016 - [Sébabouche](https://github.com/sebabouche)
